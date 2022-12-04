@@ -1,1 +1,1 @@
-web: gunicorn --access-logfile - --bind 0.0.0.0:$PORT --forwarded-allow-ips '*' app:app
+web: gunicorn --access-logfile - --bind 0.0.0.0:$PORT --forwarded-allow-ips '*' demo.wsgi:application
